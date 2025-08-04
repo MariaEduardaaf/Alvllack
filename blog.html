@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Alvllack - Dicas e Estratégias de Marketing Digital</title>
+    <meta name="description" content="Blog da Alvllack com dicas práticas de tráfego pago, vendas no digital e estratégias de marketing para iniciantes e profissionais.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Alvllack</span>
+                        <span class="logo-tagline">Agência Digital</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="cursos.html" class="nav-link">Cursos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="language-selector">
+                        <select id="language" class="language-select">
+                            <option value="pt">PT</option>
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">Blog da Alvllack</h1>
+                    <p class="hero-subtitle">
+                        Conteúdo exclusivo sobre marketing digital, tráfego pago e estratégias de vendas
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories">
+            <div class="container">
+                <div class="categories-filter">
+                    <button class="category-btn active" data-category="all">Todos os Posts</button>
+                    <button class="category-btn" data-category="vendas">Vendas no Digital</button>
+                    <button class="category-btn" data-category="trafego">Dicas de Tráfego Pago</button>
+                    <button class="category-btn" data-category="iniciantes">Estratégias para Iniciantes</button>
+                    <button class="category-btn" data-category="internacional">Tráfego Internacional</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="container">
+                <div class="post-featured">
+                    <div class="post-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="post-category-badge">Tráfego Pago</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">22 de Julho, 2024</span>
+                            <span class="reading-time">5 min de leitura</span>
+                        </div>
+                        <h2 class="post-title">Como Otimizar suas Campanhas de Google Ads para Máximo ROI</h2>
+                        <p class="post-excerpt">
+                            Descubra as estratégias avançadas que utilizamos para aumentar o retorno sobre investimento das campanhas dos nossos clientes. Técnicas práticas que você pode aplicar hoje mesmo.
+                        </p>
+                        <div class="post-cta">
+                            <a href="#" class="btn btn-primary">Ler Artigo Completo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts">
+            <div class="container">
+                <div class="posts-grid">
+                    <!-- Post 1 -->
+                    <article class="post-card" data-category="vendas">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="post-category">Vendas no Digital</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">20 de Julho, 2024</span>
+                                <span class="reading-time">3 min</span>
+                            </div>
+                            <h3 class="post-title">7 Estratégias para Aumentar a Conversão da sua Landing Page</h3>
+                            <p class="post-excerpt">
+                                Elementos essenciais que podem duplicar suas conversões sem aumentar o tráfego...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="post-card" data-category="trafego">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="post-category">Tráfego Pago</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">18 de Julho, 2024</span>
+                                <span class="reading-time">4 min</span>
+                            </div>
+                            <h3 class="post-title">Meta Ads vs Google Ads: Qual Escolher para seu Negócio?</h3>
+                            <p class="post-excerpt">
+                                Análise completa das duas principais plataformas de tráfego pago e quando usar cada uma...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="post-card" data-category="iniciantes">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="post-category">Para Iniciantes</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">15 de Julho, 2024</span>
+                                <span class="reading-time">6 min</span>
+                            </div>
+                            <h3 class="post-title">Guia Completo: Primeiros Passos no Tráfego Pago</h3>
+                            <p class="post-excerpt">
+                                Tudo o que você precisa saber antes de investir seu primeiro real em anúncios pagos...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 4 -->
+                    <article class="post-card" data-category="vendas">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-funnel-dollar"></i>
+                            </div>
+                            <div class="post-category">Vendas no Digital</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">12 de Julho, 2024</span>
+                                <span class="reading-time">5 min</span>
+                            </div>
+                            <h3 class="post-title">Como Construir um Funil de Vendas que Converte</h3>
+                            <p class="post-excerpt">
+                                Estrutura paso a passo para criar um funil que transforma visitantes em clientes...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 5 -->
+                    <article class="post-card" data-category="internacional">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="post-category">Tráfego Internacional</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">10 de Julho, 2024</span>
+                                <span class="reading-time">7 min</span>
+                            </div>
+                            <h3 class="post-title">Estratégias de Tráfego para Brasileiros no Exterior</h3>
+                            <p class="post-excerpt">
+                                Como adaptar suas campanhas para diferentes mercados e culturas...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 6 -->
+                    <article class="post-card" data-category="trafego">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="post-category">Tráfego Pago</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">8 de Julho, 2024</span>
+                                <span class="reading-time">4 min</span>
+                            </div>
+                            <h3 class="post-title">Métricas que Realmente Importam no Tráfego Pago</h3>
+                            <p class="post-excerpt">
+                                Pare de focar nas métricas erradas e descubra o que realmente mede o sucesso...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 7 -->
+                    <article class="post-card" data-category="iniciantes">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="post-category">Para Iniciantes</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">5 de Julho, 2024</span>
+                                <span class="reading-time">3 min</span>
+                            </div>
+                            <h3 class="post-title">5 Erros Fatais que Novatos Cometem no Marketing Digital</h3>
+                            <p class="post-excerpt">
+                                Evite esses erros comuns que podem destruir seus resultados antes mesmo de começar...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 8 -->
+                    <article class="post-card" data-category="vendas">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="post-category">Vendas no Digital</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">2 de Julho, 2024</span>
+                                <span class="reading-time">5 min</span>
+                            </div>
+                            <h3 class="post-title">WhatsApp Business: Como Vender Mais Usando o App</h3>
+                            <p class="post-excerpt">
+                                Estratégias práticas para transformar o WhatsApp em uma máquina de vendas...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 9 -->
+                    <article class="post-card" data-category="internacional">
+                        <div class="post-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="post-category">Tráfego Internacional</div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">28 de Junho, 2024</span>
+                                <span class="reading-time">6 min</span>
+                            </div>
+                            <h3 class="post-title">Como Ganhar em Dólar com Marketing de Afiliados</h3>
+                            <p class="post-excerpt">
+                                Estratégias para monetizar em mercados internacionais e receber em moeda forte...
+                            </p>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="btn btn-outline btn-large load-more-btn">
+                        <i class="fas fa-plus"></i>
+                        Carregar Mais Posts
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2 class="newsletter-title">Não perca nenhuma dica!</h2>
+                        <p class="newsletter-subtitle">
+                            Receba nossos melhores conteúdos sobre marketing digital diretamente no seu email. 
+                            Conteúdo exclusivo, sem spam.
+                        </p>
+                    </div>
+                    <div class="newsletter-form">
+                        <form class="email-form">
+                            <input type="email" placeholder="Seu melhor email" class="email-input" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Inscrever-se
+                            </button>
+                        </form>
+                        <p class="newsletter-disclaimer">
+                            Ao se inscrever, você concorda em receber emails da Alvllack. 
+                            Você pode cancelar a qualquer momento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Quer resultados práticos além do conteúdo?</h2>
+                    <p class="cta-subtitle">Nossos serviços e mentoria transformam conhecimento em resultados reais</p>
+                    <div class="cta-buttons">
+                        <a href="servicos.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-rocket"></i>
+                            Conhecer Nossos Serviços
+                        </a>
+                        <a href="cursos.html" class="btn btn-outline btn-large">
+                            <i class="fas fa-graduation-cap"></i>
+                            Ver Cursos e Mentoria
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">Alvllack</span>
+                        <span class="logo-tagline">Agência Digital</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando negócios através de estratégias digitais eficazes e mentoria especializada.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="servicos.html">Tráfego Pago</a></li>
+                            <li><a href="servicos.html">Landing Pages</a></li>
+                            <li><a href="servicos.html">Consultoria</a></li>
+                            <li><a href="cursos.html">Mentoria</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="https://calendar.app.google/2WAPXGtFH9rGyWbr8" target="_blank">Agendar Reunião</a></li>
+                            <li><a href="https://forms.gle/QJc7bjR1cBM4xikWA" target="_blank">Formulário</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alvllack. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Action Buttons -->
+    <div class="fixed-actions">
+        <a href="https://calendar.app.google/2WAPXGtFH9rGyWbr8" target="_blank" class="fixed-btn agenda-btn" title="Agendar análise gratuita">
+            <i class="fas fa-calendar"></i>
+            <span>Agenda</span>
+        </a>
+        <a href="#" class="fixed-btn whatsapp-btn" title="Falar no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

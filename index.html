@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvllack - Agência de Tráfego Pago Internacional</title>
+    <meta name="description" content="Agência de tráfego pago com atuação internacional. Estratégias digitais para empresários e mentoria para quem quer dominar o tráfego pago.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo.svg" alt="Alvllack Logo" class="logo-img">
+                    <h1>Alvllack</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="language-switcher">
+                        <select id="language" onchange="changeLanguage()">
+                            <option value="pt">🇧🇷 PT</option>
+                            <option value="en">🇺🇸 EN</option>
+                            <option value="es">🇪🇸 ES</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <!-- Público 1: Empresários -->
+                <div class="target-audience">
+                    <h2>Atraia mais clientes com estratégias digitais sob medida — onde quer que você esteja.</h2>
+                    <p>Se você oferece serviços ou produtos e quer vender mais, gerar autoridade ou captar leads, criamos o caminho ideal para o seu objetivo. Do tráfego à estrutura digital — cuidamos das campanhas, site, landing page e anúncios com foco em resultado.</p>
+                    <a href="#contato" class="cta-button primary">Quero atrair mais clientes</a>
+                </div>
+
+                <!-- Público 2: Pessoas que estudaram tráfego -->
+                <div class="target-audience">
+                    <h2>Mentoria em tráfego pago para transformar teoria em prática e resultados.</h2>
+                    <p>Se você já estudou, mas ainda não conseguiu aplicar na prática ou atrair seus primeiros clientes, essa mentoria é para você. Acompanhamento direto, estratégias aplicáveis e visão de negócio para fazer você evoluir de verdade no digital.</p>
+                    <a href="https://wa.me/5511999999999" class="cta-button secondary" target="_blank">Quero minha mentoria</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            
+            <!-- Para quem quer vender no digital -->
+            <div class="service-category">
+                <h3>Para quem quer vender no digital</h3>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-funnel-dollar"></i>
+                        <h4>Criação de funil de vendas</h4>
+                        <p>Estrutura completa para converter visitantes em clientes.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Gestão de tráfego pago</h4>
+                        <p>Google Ads, Meta Ads com foco em ROI positivo.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-desktop"></i>
+                        <h4>Landing pages e sites</h4>
+                        <p>Páginas otimizadas para conversão e vendas.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Otimização local</h4>
+                        <p>Google Meu Negócio e SEO básico para presença local.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Consultoria estratégica</h4>
+                        <p>Planejamento digital personalizado para seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mentoria em tráfego pago -->
+            <div class="service-category">
+                <h3>Mentoria em tráfego pago</h3>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <h4>Mentoria individual e em grupo</h4>
+                        <p>Acompanhamento personalizado para acelerar resultados.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-search"></i>
+                        <h4>Diagnóstico de campanhas</h4>
+                        <p>Análise detalhada do que está funcionando ou não.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Acompanhamento prático</h4>
+                        <p>Para quem estudou tráfego, mas não tem resultado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Para brasileiros no exterior -->
+            <div class="service-category">
+                <h3>Para brasileiros no exterior e expatriados</h3>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Estratégias locais e globais</h4>
+                        <p>Campanhas adaptadas para diferentes mercados.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-language"></i>
+                        <h4>Anúncios multilíngues</h4>
+                        <p>Português, inglês e espanhol com copy nativo.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Consultoria cultural</h4>
+                        <p>Adaptação de linguagem e cultura digital.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-ctas">
+                <a href="#contato" class="cta-button primary">Quero encontrar clientes para o meu negócio</a>
+                <a href="https://wa.me/5511999999999" class="cta-button secondary" target="_blank">Quero entrar na mentoria</a>
+                <a href="https://wa.me/5511999999999" class="cta-button tertiary" target="_blank">Falar com um especialista</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section id="cursos" class="cursos">
+        <div class="container">
+            <h2 class="section-title">Cursos e Treinamentos</h2>
+            
+            <div class="courses-container">
+                <!-- Cursos gravados -->
+                <div class="course-category">
+                    <h3>Cursos gravados</h3>
+                    <div class="courses-grid">
+                        <div class="course-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h4>Curso Hotfy</h4>
+                            <p>Como ganhar em dólar com estratégias digitais eficazes.</p>
+                            <a href="#" class="course-link">Saiba mais</a>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Vender como afiliado</h4>
+                            <p>Como vender como afiliado e ganhar em dólar.</p>
+                            <a href="#" class="course-link">Saiba mais</a>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-store"></i>
+                            <h4>Tráfego Local Descomplicado</h4>
+                            <p>Aprenda a criar campanhas que geram leads para negócios físicos.</p>
+                            <a href="#" class="course-link">Saiba mais</a>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-play-circle"></i>
+                            <h4>Fundamentos do Tráfego Pago</h4>
+                            <p>Curso completo para iniciantes em Facebook Ads, Instagram e Google Ads.</p>
+                            <a href="#" class="course-link">Saiba mais</a>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Estratégias para Negócios Digitais</h4>
+                            <p>Para quem deseja escalar vendas de produtos digitais e serviços.</p>
+                            <a href="#" class="course-link">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentoria personalizada -->
+                <div class="course-category">
+                    <h3>Mentoria personalizada</h3>
+                    <div class="mentorship-content">
+                        <div class="mentorship-item">
+                            <i class="fas fa-user-tie"></i>
+                            <h4>Mentoria individual</h4>
+                            <p>Mentoria individual com plano de ação exclusivo. Ideal para quem busca apoio direto para aplicar campanhas com resultado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-ctas">
+                <a href="#contato" class="cta-button primary">Quero encontrar clientes para o meu negócio</a>
+                <a href="https://wa.me/5511999999999" class="cta-button secondary" target="_blank">Quero entrar na mentoria</a>
+                <a href="https://wa.me/5511999999999" class="cta-button tertiary" target="_blank">Falar com um especialista</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre a Alvllack</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>Transformar negócios através de estratégias digitais eficazes, conectando empresários aos seus clientes ideais, independentemente da localização geográfica.</p>
+                    
+                    <h3>Nossa Visão</h3>
+                    <p>Ser a principal referência em tráfego pago internacional, oferecendo soluções personalizadas que geram resultados reais para empresários em qualquer lugar do mundo.</p>
+                    
+                    <h3>Quem Somos</h3>
+                    <p>Somos uma agência especializada em tráfego pago com experiência prática em campanhas no Brasil e no exterior. Nossa abordagem humanizada e foco em resultados nos diferencia no mercado digital.</p>
+                    
+                    <h3>Nossa Experiência</h3>
+                    <p>Com anos de experiência em campanhas digitais, atendemos tanto empreendedores brasileiros quanto expatriados, adaptando estratégias para diferentes culturas e mercados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <div class="blog-categories">
+                <div class="category-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Vendas no digital</h3>
+                    <p>Estratégias e dicas para aumentar suas vendas online.</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-ad"></i>
+                    <h3>Dicas de tráfego pago</h3>
+                    <p>Insights práticos para otimizar suas campanhas.</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Para empreendedores iniciantes</h3>
+                    <p>Primeiros passos no mundo digital.</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>Tráfego internacional</h3>
+                    <p>Estratégias para diferentes mercados globais.</p>
+                </div>
+            </div>
+            <div class="blog-cta">
+                <p>Em breve, artigos exclusivos sobre estratégias digitais!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Formulário de Contato</h3>
+                    <iframe src="https://forms.gle/QJc7bjR1cBM4xikWA" width="100%" height="600" frameborder="0">Carregando...</iframe>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/5511999999999" target="_blank">Falar agora</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Agendar Reunião</h4>
+                        <a href="https://calendar.app.google/2WAPXGtFH9rGyWbr8" target="_blank">Agendar análise gratuita</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-share-alt"></i>
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed CTAs -->
+    <div class="fixed-ctas">
+        <div class="fixed-cta-text">
+            Agende uma análise gratuita
+        </div>
+        <div class="fixed-cta-buttons">
+            <a href="https://calendar.app.google/2WAPXGtFH9rGyWbr8" class="fixed-btn schedule" target="_blank">
+                <i class="fas fa-calendar"></i> Agendar
+            </a>
+            <a href="https://wa.me/5511999999999" class="fixed-btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Alvllack</h3>
+                    <p>Agência de Tráfego Pago Internacional</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#servicos">Tráfego Pago</a></li>
+                            <li><a href="#servicos">Landing Pages</a></li>
+                            <li><a href="#servicos">Consultoria</a></li>
+                            <li><a href="#cursos">Mentoria</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://calendar.app.google/2WAPXGtFH9rGyWbr8" target="_blank">Agendar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alvllack. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

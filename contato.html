@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Alvllack Agência Digital</title>
+    <meta name="description" content="Entre em contato com a Alvllack. Agende sua análise gratuita e descubra como podemos transformar seu negócio digital.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Alvllack</span>
+                        <span class="logo-tagline">Agência Digital</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="cursos.html" class="nav-link">Cursos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contato.html" class="nav-link active">Contato</a></li>
+                    <li class="language-selector">
+                        <select id="language" class="language-select">
+                            <option value="pt">PT</option>
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 class="page-title">Entre em Contato</h1>
+                    <p class="page-subtitle">
+                        Pronto para transformar seu negócio digital? Vamos conversar sobre suas necessidades e objetivos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Options -->
+        <section class="contact-options">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Quick Actions -->
+                    <div class="contact-card highlight">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Análise Gratuita</h3>
+                        <p>Agende uma conversa para analisarmos seu negócio e identificarmos oportunidades de crescimento.</p>
+                        <a href="https://calendar.app.google/2WAPXGtFH9rGyWbr8" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-calendar"></i>
+                            Agendar Agora
+                        </a>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Fale conosco diretamente pelo WhatsApp para um atendimento rápido e personalizado.</p>
+                        <a href="#" class="btn btn-secondary whatsapp-contact">
+                            <i class="fab fa-whatsapp"></i>
+                            Chamar no WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Formulário</h3>
+                        <p>Prefere enviar uma mensagem detalhada? Use nosso formulário de contato.</p>
+                        <a href="https://forms.gle/QJc7bjR1cBM4xikWA" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Vamos conversar sobre seu projeto</h2>
+                        <p>Conte-nos mais sobre seu negócio e objetivos. Nossa equipe entrará em contato em até 24 horas.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Horário de Atendimento</h4>
+                                    <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Atendimento Internacional</h4>
+                                    <p>Atendemos em Português, Espanhol e Inglês</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Confidencialidade</h4>
+                                    <p>Todas as informações são tratadas com total sigilo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">E-mail *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="telefone">Telefone/WhatsApp</label>
+                                    <input type="tel" id="telefone" name="telefone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="empresa">Empresa/Negócio</label>
+                                <input type="text" id="empresa" name="empresa">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="servico">Serviço de Interesse</label>
+                                <select id="servico" name="servico">
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="trafego-pago">Tráfego Pago</option>
+                                    <option value="landing-pages">Landing Pages</option>
+                                    <option value="consultoria">Consultoria Digital</option>
+                                    <option value="mentoria">Mentoria em Tráfego</option>
+                                    <option value="completo">Solução Completa</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensagem">Conte-nos sobre seu projeto *</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva seu negócio, objetivos e como podemos ajudar..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="sim">
+                                    <span class="checkmark"></span>
+                                    Quero receber dicas e novidades sobre marketing digital
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <p class="section-subtitle">Tire suas dúvidas antes de entrar em contato</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Quanto tempo leva para ver resultados?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Os primeiros resultados podem aparecer em 15-30 dias, mas resultados consistentes geralmente levam de 60 a 90 dias, dependendo do nicho e estratégia aplicada.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Vocês atendem empresas de todos os tamanhos?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Atendemos desde pequenos empreendedores até grandes empresas, adaptando nossas estratégias ao orçamento e objetivos de cada cliente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Como funciona a análise gratuita?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>É uma reunião de 30-45 minutos onde analisamos seu negócio atual, identificamos oportunidades e apresentamos estratégias personalizadas, sem compromisso.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Trabalham com clientes internacionais?</h4>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Temos experiência com campanhas no Brasil e exterior, com atendimento em português, espanhol e inglês.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">Alvllack</span>
+                        <span class="logo-tagline">Agência Digital</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando negócios através de estratégias digitais eficazes e mentoria especializada.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="servicos.html">Tráfego Pago</a></li>
+                            <li><a href="servicos.html">Landing Pages</a></li>
+                            <li><a href="servicos.html">Consultoria</a></li>
+                            <li><a href="cursos.html">Mentoria</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="https://calendar.app.google/2WAPXGtFH9rGyWbr8" target="_blank">Agendar Reunião</a></li>
+                            <li><a href="https://forms.gle/QJc7bjR1cBM4xikWA" target="_blank">Formulário</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alvllack. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Action Buttons -->
+    <div class="fixed-actions">
+        <a href="https://calendar.app.google/2WAPXGtFH9rGyWbr8" target="_blank" class="fixed-btn agenda-btn" title="Agendar análise gratuita">
+            <i class="fas fa-calendar"></i>
+            <span>Agenda</span>
+        </a>
+        <a href="#" class="fixed-btn whatsapp-btn" title="Falar no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
