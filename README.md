@@ -42,7 +42,7 @@ python -m http.server 8000
 
 ## 🔗 Links
 
-- **Blog Next.js**: ../blog/
+- **Blog Next.js**: https://github.com/MariaEduardaaf/Alvllack_blog
 - **Materiais**: ../criativos/
 
 ---
