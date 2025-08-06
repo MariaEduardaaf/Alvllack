@@ -10,12 +10,13 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.7;
-    color: #373643;
-    background: linear-gradient(135deg, #EEEAE4 0%, #f2eee8 50%, #EEEAE4 100%);
-    background-attachment: fixed;
+    line-height: 1.6;
+    color: #171717;
+    background: #fafafa;
     overflow-x: hidden;
     font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -26,29 +27,17 @@ body {
 
 /* Header e Navegação */
 .header {
-    background: rgba(238,234,228,0.95);
-    backdrop-filter: blur(30px);
-    border-bottom: 1px solid rgba(24,203,150,0.1);
+    background: white;
+    border-bottom: 1px solid #f5f5f5;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
-}
-
-.header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(24,203,150,0.3), transparent);
 }
 
 .navbar {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .nav-container {
@@ -78,7 +67,7 @@ body {
 }
 
 .nav-logo h1 {
-    color: #373643;
+    color: #171717;
     font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -94,10 +83,10 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #373643;
+    color: #525252;
     font-weight: 500;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
+    transition: color 0.2s ease;
     position: relative;
     opacity: 0.8;
 }
@@ -152,74 +141,27 @@ section {
 
 .section-title {
     text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 4rem;
-    color: #373643;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #171717;
     font-weight: 700;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.025em;
     line-height: 1.1;
-    position: relative;
-    background: linear-gradient(135deg, #373643, #18CB96);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, #18CB96, #15b885);
-    border-radius: 2px;
 }
 
 /* Home Section */
 .home {
-    background: linear-gradient(135deg, #18CB96 0%, #15b885 50%, #12a574 100%);
-    color: #fff;
-    min-height: 100vh;
+    background: white;
+    color: #171717;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 80px;
 }
 
-.home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(55,54,67,0.1) 0%, transparent 30%);
-    pointer-events: none;
-}
-
-.home::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.03) 50%, transparent 60%);
-    animation: shine 3s ease-in-out infinite;
-    pointer-events: none;
-}
-
-@keyframes shine {
-    0% { transform: translateX(-100%) translateY(-100%) rotate(30deg); }
-    100% { transform: translateX(100%) translateY(100%) rotate(30deg); }
-}
 
 .home-content {
     display: grid;
@@ -229,19 +171,18 @@ section {
 }
 
 .target-audience {
-    padding: 4rem 3rem;
-    background: rgba(255,255,255,0.95);
+    padding: 3rem;
+    background: white;
     border-radius: 24px;
-    border: 2px solid rgba(255,255,255,0.3);
-    box-shadow: 
-        0 25px 50px rgba(0,0,0,0.15),
-        0 0 0 1px rgba(255,255,255,0.1),
-        inset 0 1px 0 rgba(255,255,255,0.2);
-    backdrop-filter: blur(30px);
-    position: relative;
-    z-index: 1;
-    transition: all 0.4s ease;
-    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.target-audience:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    border-color: rgba(24, 203, 150, 0.2);
 }
 
 .target-audience::before {
@@ -291,100 +232,64 @@ section {
 
 /* Botões CTA */
 .cta-button {
-    display: inline-block;
-    padding: 18px 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 9999px;
     font-weight: 600;
     font-size: 1rem;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
     cursor: pointer;
-    letter-spacing: -0.01em;
-    position: relative;
-    overflow: hidden;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
-}
-
-.cta-button:hover::before {
-    left: 100%;
+    border: none;
+    outline: none;
 }
 
 .cta-button.primary {
-    background: linear-gradient(135deg, #18CB96, #15b885);
+    background: #18CB96;
     color: white;
-    border: 2px solid transparent;
-    box-shadow: 
-        0 8px 25px rgba(24,203,150,0.25),
-        inset 0 1px 0 rgba(255,255,255,0.2);
+    box-shadow: 0 4px 20px rgba(24, 203, 150, 0.3);
 }
 
 .cta-button.primary:hover {
-    background: linear-gradient(135deg, #15b885, #12a574);
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 
-        0 15px 40px rgba(24,203,150,0.4),
-        inset 0 1px 0 rgba(255,255,255,0.3);
+    background: #15b885;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(24, 203, 150, 0.4);
 }
 
 .cta-button.secondary {
-    background: #fff;
-    color: #373643;
-    border: 2px solid #18CB96;
+    background: white;
+    color: #171717;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
 }
 
 .cta-button.secondary:hover {
-    background: #18CB96;
-    color: #fff;
     border-color: #18CB96;
+    color: #18CB96;
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(24,203,150,0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .cta-button.tertiary {
     background: transparent;
-    color: #373643;
-    border: 2px solid #373643;
+    color: #18CB96;
+    border: 2px solid #18CB96;
 }
 
 .cta-button.tertiary:hover {
-    background: #373643;
-    color: #fff;
-    border-color: #373643;
+    background: #18CB96;
+    color: white;
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(55,54,67,0.2);
+    box-shadow: 0 8px 25px rgba(24, 203, 150, 0.3);
 }
 
 /* Serviços Section */
 .servicos {
-    background: linear-gradient(135deg, #fff 0%, #fafafa 50%, #fff 100%);
+    background: #f5f5f5;
     position: relative;
-}
-
-.servicos::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 20%, rgba(24,203,150,0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(24,203,150,0.02) 0%, transparent 50%);
-    pointer-events: none;
 }
 
 .service-category {
@@ -392,26 +297,12 @@ section {
 }
 
 .service-category h3 {
-    font-size: 2.25rem;
-    color: #373643;
+    font-size: 2rem;
+    color: #171717;
     text-align: center;
     margin-bottom: 3rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
-    position: relative;
-    padding-bottom: 1rem;
-}
-
-.service-category h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 3px;
-    background: linear-gradient(90deg, #18CB96, #15b885);
-    border-radius: 2px;
+    letter-spacing: -0.025em;
 }
 
 .services-grid {
@@ -422,60 +313,19 @@ section {
 }
 
 .service-item {
-    background: linear-gradient(145deg, #EEEAE4, #f5f1eb);
-    padding: 3rem 2rem;
-    border-radius: 20px;
-    border: 1px solid rgba(24,203,150,0.15);
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    border: 1px solid #e5e5e5;
     text-align: center;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-    box-shadow: 
-        0 10px 30px rgba(0,0,0,0.05),
-        inset 0 1px 0 rgba(255,255,255,0.8);
-}
-
-.service-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(24,203,150,0.03), transparent 50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.service-item::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #18CB96, #15b885, #18CB96);
-    border-radius: 22px;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
 }
 
 .service-item:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: 
-        0 35px 70px rgba(24,203,150,0.25),
-        0 0 0 1px rgba(24,203,150,0.2),
-        inset 0 1px 0 rgba(255,255,255,0.9);
-    background: linear-gradient(145deg, #fff, #f8f8f8);
-}
-
-.service-item:hover::before {
-    opacity: 1;
-}
-
-.service-item:hover::after {
-    opacity: 1;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border-color: rgba(24, 203, 150, 0.2);
 }
 
 .service-item i {
@@ -488,7 +338,7 @@ section {
 .service-item h4 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    color: #373643;
+    color: #171717;
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.3;
