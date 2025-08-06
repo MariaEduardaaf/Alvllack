@@ -112,6 +112,35 @@ function changeLanguage() {
             blogTitle: 'Blog',
             contactTitle: 'Entre em Contato',
             
+            // Services section
+            servicesSubtitle1: 'Para quem quer vender no digital',
+            servicesSubtitle2: 'Mentoria em tráfego pago',
+            servicesSubtitle3: 'Para brasileiros no exterior e expatriados',
+            
+            // Service items
+            service1Title: 'Criação de funil de vendas',
+            service1Desc: 'Estrutura completa para converter visitantes em clientes.',
+            service2Title: 'Gestão de tráfego pago',
+            service2Desc: 'Google Ads, Meta Ads com foco em ROI positivo.',
+            service3Title: 'Landing pages e sites',
+            service3Desc: 'Páginas otimizadas para conversão e vendas.',
+            service4Title: 'Otimização local',
+            service4Desc: 'Google Meu Negócio e SEO básico para presença local.',
+            service5Title: 'Consultoria estratégica',
+            service5Desc: 'Planejamento digital personalizado para seu negócio.',
+            service6Title: 'Mentoria individual e em grupo',
+            service6Desc: 'Acompanhamento personalizado para acelerar resultados.',
+            service7Title: 'Diagnóstico de campanhas',
+            service7Desc: 'Análise detalhada do que está funcionando ou não.',
+            service8Title: 'Acompanhamento prático',
+            service8Desc: 'Para quem estudou tráfego, mas não tem resultado.',
+            service9Title: 'Estratégias locais e globais',
+            service9Desc: 'Campanhas adaptadas para diferentes mercados.',
+            service10Title: 'Anúncios multilíngues',
+            service10Desc: 'Português, inglês e espanhol com copy nativo.',
+            service11Title: 'Consultoria cultural',
+            service11Desc: 'Adaptação de linguagem e cultura digital.',
+            
             // CTAs fixos
             fixedCtaText: 'Agende uma análise gratuita',
             fixedCtaSchedule: 'Agendar',
@@ -148,6 +177,35 @@ function changeLanguage() {
             blogTitle: 'Blog',
             contactTitle: 'Get in Touch',
             
+            // Services section
+            servicesSubtitle1: 'For those who want to sell digital',
+            servicesSubtitle2: 'Paid traffic mentoring',
+            servicesSubtitle3: 'For Brazilians abroad and expatriates',
+            
+            // Service items
+            service1Title: 'Sales funnel creation',
+            service1Desc: 'Complete structure to convert visitors into customers.',
+            service2Title: 'Paid traffic management',
+            service2Desc: 'Google Ads, Meta Ads focused on positive ROI.',
+            service3Title: 'Landing pages and websites',
+            service3Desc: 'Pages optimized for conversion and sales.',
+            service4Title: 'Local optimization',
+            service4Desc: 'Google My Business and basic SEO for local presence.',
+            service5Title: 'Strategic consulting',
+            service5Desc: 'Personalized digital planning for your business.',
+            service6Title: 'Individual and group mentoring',
+            service6Desc: 'Personalized guidance to accelerate results.',
+            service7Title: 'Campaign diagnosis',
+            service7Desc: 'Detailed analysis of what\'s working or not.',
+            service8Title: 'Practical follow-up',
+            service8Desc: 'For those who studied traffic but have no results.',
+            service9Title: 'Local and global strategies',
+            service9Desc: 'Campaigns adapted for different markets.',
+            service10Title: 'Multilingual ads',
+            service10Desc: 'Portuguese, English and Spanish with native copy.',
+            service11Title: 'Cultural consulting',
+            service11Desc: 'Language and digital culture adaptation.',
+            
             // CTAs fixos
             fixedCtaText: 'Schedule a free analysis',
             fixedCtaSchedule: 'Schedule',
@@ -183,6 +241,35 @@ function changeLanguage() {
             aboutTitle: 'Acerca de Alvllack',
             blogTitle: 'Blog',
             contactTitle: 'Ponte en Contacto',
+            
+            // Services section
+            servicesSubtitle1: 'Para quien quiere vender en digital',
+            servicesSubtitle2: 'Mentoría en tráfico pago',
+            servicesSubtitle3: 'Para brasileños en el exterior y expatriados',
+            
+            // Service items
+            service1Title: 'Creación de embudo de ventas',
+            service1Desc: 'Estructura completa para convertir visitantes en clientes.',
+            service2Title: 'Gestión de tráfico pago',
+            service2Desc: 'Google Ads, Meta Ads enfocados en ROI positivo.',
+            service3Title: 'Landing pages y sitios web',
+            service3Desc: 'Páginas optimizadas para conversión y ventas.',
+            service4Title: 'Optimización local',
+            service4Desc: 'Google My Business y SEO básico para presencia local.',
+            service5Title: 'Consultoría estratégica',
+            service5Desc: 'Planificación digital personalizada para tu negocio.',
+            service6Title: 'Mentoría individual y grupal',
+            service6Desc: 'Acompañamiento personalizado para acelerar resultados.',
+            service7Title: 'Diagnóstico de campañas',
+            service7Desc: 'Análisis detallado de lo que funciona o no.',
+            service8Title: 'Seguimiento práctico',
+            service8Desc: 'Para quien estudió tráfico pero no tiene resultados.',
+            service9Title: 'Estrategias locales y globales',
+            service9Desc: 'Campañas adaptadas para diferentes mercados.',
+            service10Title: 'Anuncios multiidioma',
+            service10Desc: 'Portugués, inglés y español con copy nativo.',
+            service11Title: 'Consultoría cultural',
+            service11Desc: 'Adaptación de lenguaje y cultura digital.',
             
             // CTAs fixos
             fixedCtaText: 'Agenda un análisis gratuito',
@@ -251,6 +338,9 @@ function changeLanguage() {
         if (element) element.textContent = text;
     });
     
+    // Services section content
+    translateServicesSection(t);
+    
     // CTAs fixos
     const fixedCtaText = document.querySelector('.fixed-cta-text');
     if (fixedCtaText) fixedCtaText.textContent = t.fixedCtaText;
@@ -285,6 +375,47 @@ function changeLanguage() {
     
     // Salvar preferência no localStorage
     localStorage.setItem('selectedLanguage', language);
+}
+
+// Função para traduzir a seção de serviços
+function translateServicesSection(t) {
+    // Subtítulos das categorias de serviços
+    const serviceCategories = document.querySelectorAll('.service-category h3');
+    if (serviceCategories.length >= 3) {
+        if (t.servicesSubtitle1) serviceCategories[0].textContent = t.servicesSubtitle1;
+        if (t.servicesSubtitle2) serviceCategories[1].textContent = t.servicesSubtitle2;
+        if (t.servicesSubtitle3) serviceCategories[2].textContent = t.servicesSubtitle3;
+    }
+    
+    // Traduzir items de serviços individuais
+    const serviceItems = document.querySelectorAll('.service-item');
+    const serviceTranslations = [
+        { title: t.service1Title, desc: t.service1Desc },
+        { title: t.service2Title, desc: t.service2Desc },
+        { title: t.service3Title, desc: t.service3Desc },
+        { title: t.service4Title, desc: t.service4Desc },
+        { title: t.service5Title, desc: t.service5Desc },
+        { title: t.service6Title, desc: t.service6Desc },
+        { title: t.service7Title, desc: t.service7Desc },
+        { title: t.service8Title, desc: t.service8Desc },
+        { title: t.service9Title, desc: t.service9Desc },
+        { title: t.service10Title, desc: t.service10Desc },
+        { title: t.service11Title, desc: t.service11Desc }
+    ];
+    
+    serviceItems.forEach((item, index) => {
+        if (serviceTranslations[index]) {
+            const titleElement = item.querySelector('h4');
+            const descElement = item.querySelector('p');
+            
+            if (titleElement && serviceTranslations[index].title) {
+                titleElement.textContent = serviceTranslations[index].title;
+            }
+            if (descElement && serviceTranslations[index].desc) {
+                descElement.textContent = serviceTranslations[index].desc;
+            }
+        }
+    });
 }
 
 // Header sticky com mudança de cor
