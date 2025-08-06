@@ -3,19 +3,35 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Fechar menu ao clicar em um link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
         });
-    });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+    
+    // Carregar idioma salvo
+    loadSavedLanguage();
 });
+
+// Carregar idioma salvo do localStorage
+function loadSavedLanguage() {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    const languageSelect = document.getElementById('language');
+    
+    if (savedLanguage && languageSelect) {
+        languageSelect.value = savedLanguage;
+        changeLanguage();
+    }
+}
 
 // Scroll suave para âncoras
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -60,7 +76,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Funcionalidade de troca de idiomas
 function changeLanguage() {
-    const language = document.getElementById('language').value;
+    const languageSelect = document.getElementById('language');
+    if (!languageSelect) {
+        console.error('Language selector not found');
+        return;
+    }
+    
+    const language = languageSelect.value;
+    console.log('Changing language to:', language);
     
     // Objetos com traduções
     const translations = {
@@ -177,12 +200,30 @@ function changeLanguage() {
     const t = translations[language];
     
     // Header navigation
-    document.querySelector('a[href="#home"]').textContent = t.home;
-    document.querySelector('a[href="#servicos"]').textContent = t.services;
-    document.querySelector('a[href="#cursos"]').textContent = t.courses;
-    document.querySelector('a[href="#sobre"]').textContent = t.about;
-    document.querySelector('a[href="#blog"]').textContent = t.blog;
-    document.querySelector('a[href="#contato"]').textContent = t.contact;
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        switch(href) {
+            case '#home':
+                link.textContent = t.home;
+                break;
+            case '#servicos':
+                link.textContent = t.services;
+                break;
+            case '#cursos':
+                link.textContent = t.courses;
+                break;
+            case '#sobre':
+                link.textContent = t.about;
+                break;
+            case '#blog':
+                link.textContent = t.blog;
+                break;
+            case '#contato':
+                link.textContent = t.contact;
+                break;
+        }
+    });
     
     // Home section
     const homeAudiences = document.querySelectorAll('.target-audience');
@@ -197,16 +238,28 @@ function changeLanguage() {
     }
     
     // Section titles
-    document.querySelector('#servicos .section-title').textContent = t.servicesTitle;
-    document.querySelector('#cursos .section-title').textContent = t.coursesTitle;
-    document.querySelector('#sobre .section-title').textContent = t.aboutTitle;
-    document.querySelector('#blog .section-title').textContent = t.blogTitle;
-    document.querySelector('#contato .section-title').textContent = t.contactTitle;
+    const sectionTitles = [
+        { selector: '#servicos .section-title', text: t.servicesTitle },
+        { selector: '#cursos .section-title', text: t.coursesTitle },
+        { selector: '#sobre .section-title', text: t.aboutTitle },
+        { selector: '#blog .section-title', text: t.blogTitle },
+        { selector: '#contato .section-title', text: t.contactTitle }
+    ];
+    
+    sectionTitles.forEach(({ selector, text }) => {
+        const element = document.querySelector(selector);
+        if (element) element.textContent = text;
+    });
     
     // CTAs fixos
-    document.querySelector('.fixed-cta-text').textContent = t.fixedCtaText;
-    document.querySelector('.fixed-btn.schedule').innerHTML = `<i class="fas fa-calendar"></i> ${t.fixedCtaSchedule}`;
-    document.querySelector('.fixed-btn.whatsapp').innerHTML = `<i class="fab fa-whatsapp"></i> ${t.fixedCtaWhatsapp}`;
+    const fixedCtaText = document.querySelector('.fixed-cta-text');
+    if (fixedCtaText) fixedCtaText.textContent = t.fixedCtaText;
+    
+    const scheduleBtn = document.querySelector('.fixed-btn.schedule');
+    if (scheduleBtn) scheduleBtn.innerHTML = `<i class="fas fa-calendar"></i> ${t.fixedCtaSchedule}`;
+    
+    const whatsappBtn = document.querySelector('.fixed-btn.whatsapp');
+    if (whatsappBtn) whatsappBtn.innerHTML = `<i class="fab fa-whatsapp"></i> ${t.fixedCtaWhatsapp}`;
     
     // Services CTAs
     const serviceCtas = document.querySelectorAll('.service-ctas .cta-button');
@@ -226,6 +279,12 @@ function changeLanguage() {
     
     // Atualizar atributo lang
     document.documentElement.lang = language === 'pt' ? 'pt-BR' : language === 'en' ? 'en' : 'es';
+    
+    // Log de sucesso
+    console.log('Translation applied successfully for language:', language);
+    
+    // Salvar preferência no localStorage
+    localStorage.setItem('selectedLanguage', language);
 }
 
 // Header sticky com mudança de cor
