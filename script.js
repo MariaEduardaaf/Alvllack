@@ -180,6 +180,7 @@ function changeLanguage() {
             blog4Title: 'Tráfego internacional',
             blog4Desc: 'Estratégias para diferentes mercados globais.',
             blogCta: 'Em breve, artigos exclusivos sobre estratégias digitais!',
+            blogButton: 'Visitar Blog',
             
             // Contact section
             contactFormTitle: 'Formulário de Contato',
@@ -310,6 +311,7 @@ function changeLanguage() {
             blog4Title: 'International traffic',
             blog4Desc: 'Strategies for different global markets.',
             blogCta: 'Coming soon, exclusive articles on digital strategies!',
+            blogButton: 'Visit Blog',
             
             // Contact section
             contactFormTitle: 'Contact Form',
@@ -440,6 +442,7 @@ function changeLanguage() {
             blog4Title: 'Tráfico internacional',
             blog4Desc: 'Estrategias para diferentes mercados globales.',
             blogCta: '¡Próximamente, artículos exclusivos sobre estrategias digitales!',
+            blogButton: 'Visitar Blog',
             
             // Contact section
             contactFormTitle: 'Formulario de Contacto',
@@ -730,6 +733,12 @@ function translateBlogSection(t) {
     const blogCta = document.querySelector('.blog-cta p');
     if (blogCta && t.blogCta) {
         blogCta.textContent = t.blogCta;
+    }
+    
+    // Botão do blog
+    const blogButton = document.querySelector('.blog-cta .cta-button');
+    if (blogButton && t.blogButton) {
+        blogButton.textContent = t.blogButton;
     }
 }
 

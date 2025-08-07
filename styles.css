@@ -649,6 +649,16 @@ section {
     color: #666;
 }
 
+.blog-cta p {
+    margin-bottom: 2rem;
+}
+
+.blog-cta .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 /* Contato Section */
 .contato {
     background: #fff;
