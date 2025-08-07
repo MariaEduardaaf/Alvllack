@@ -141,6 +141,71 @@ function changeLanguage() {
             service11Title: 'Consultoria cultural',
             service11Desc: 'Adaptação de linguagem e cultura digital.',
             
+            // Courses section
+            coursesSubtitle1: 'Cursos gravados',
+            coursesSubtitle2: 'Mentoria personalizada',
+            
+            course1Title: 'Curso Hotfy',
+            course1Desc: 'Como ganhar em dólar com estratégias digitais eficazes.',
+            course2Title: 'Vender como afiliado',
+            course2Desc: 'Como vender como afiliado e ganhar em dólar.',
+            course3Title: 'Tráfego Local Descomplicado',
+            course3Desc: 'Aprenda a criar campanhas que geram leads para negócios físicos.',
+            course4Title: 'Fundamentos do Tráfego Pago',
+            course4Desc: 'Curso completo para iniciantes em Facebook Ads, Instagram e Google Ads.',
+            course5Title: 'Estratégias para Negócios Digitais',
+            course5Desc: 'Para quem deseja escalar vendas de produtos digitais e serviços.',
+            course6Title: 'Mentoria individual',
+            course6Desc: 'Mentoria individual com plano de ação exclusivo. Ideal para quem busca apoio direto para aplicar campanhas com resultado.',
+            
+            courseLink: 'Saiba mais',
+            
+            // About section
+            aboutMission: 'Nossa Missão',
+            aboutMissionText: 'Transformar negócios através de estratégias digitais eficazes, conectando empresários aos seus clientes ideais, independentemente da localização geográfica.',
+            aboutVision: 'Nossa Visão',
+            aboutVisionText: 'Ser a principal referência em tráfego pago internacional, oferecendo soluções personalizadas que geram resultados reais para empresários em qualquer lugar do mundo.',
+            aboutWho: 'Quem Somos',
+            aboutWhoText: 'Somos uma agência especializada em tráfego pago com experiência prática em campanhas no Brasil e no exterior. Nossa abordagem humanizada e foco em resultados nos diferencia no mercado digital.',
+            aboutExperience: 'Nossa Experiência',
+            aboutExperienceText: 'Com anos de experiência em campanhas digitais, atendemos tanto empreendedores brasileiros quanto expatriados, adaptando estratégias para diferentes culturas e mercados.',
+            
+            // Blog section
+            blog1Title: 'Vendas no digital',
+            blog1Desc: 'Estratégias e dicas para aumentar suas vendas online.',
+            blog2Title: 'Dicas de tráfego pago',
+            blog2Desc: 'Insights práticos para otimizar suas campanhas.',
+            blog3Title: 'Para empreendedores iniciantes',
+            blog3Desc: 'Primeiros passos no mundo digital.',
+            blog4Title: 'Tráfego internacional',
+            blog4Desc: 'Estratégias para diferentes mercados globais.',
+            blogCta: 'Em breve, artigos exclusivos sobre estratégias digitais!',
+            
+            // Contact section
+            contactFormTitle: 'Formulário de Contato',
+            contactFormLoading: 'Carregando...',
+            contact1Title: 'WhatsApp',
+            contact1Link: 'Falar agora',
+            contact2Title: 'Agendar Reunião',
+            contact2Link: 'Agendar análise gratuita',
+            contact3Title: 'Redes Sociais',
+            
+            // Footer
+            footerDesc: 'Agência de Tráfego Pago Internacional',
+            footerServices: 'Serviços',
+            footerService1: 'Tráfego Pago',
+            footerService2: 'Landing Pages',
+            footerService3: 'Consultoria',
+            footerService4: 'Mentoria',
+            footerCompany: 'Empresa',
+            footerCompany1: 'Sobre',
+            footerCompany2: 'Blog',
+            footerCompany3: 'Contato',
+            footerContact: 'Contato',
+            footerContact1: 'WhatsApp',
+            footerContact2: 'Agendar',
+            footerCopyright: 'Todos os direitos reservados.',
+            
             // CTAs fixos
             fixedCtaText: 'Agende uma análise gratuita',
             fixedCtaSchedule: 'Agendar',
@@ -206,6 +271,71 @@ function changeLanguage() {
             service11Title: 'Cultural consulting',
             service11Desc: 'Language and digital culture adaptation.',
             
+            // Courses section
+            coursesSubtitle1: 'Recorded courses',
+            coursesSubtitle2: 'Personalized mentoring',
+            
+            course1Title: 'Hotfy Course',
+            course1Desc: 'How to earn in dollars with effective digital strategies.',
+            course2Title: 'Selling as an affiliate',
+            course2Desc: 'How to sell as an affiliate and earn in dollars.',
+            course3Title: 'Local Traffic Simplified',
+            course3Desc: 'Learn to create campaigns that generate leads for physical businesses.',
+            course4Title: 'Paid Traffic Fundamentals',
+            course4Desc: 'Complete course for beginners in Facebook Ads, Instagram and Google Ads.',
+            course5Title: 'Digital Business Strategies',
+            course5Desc: 'For those who want to scale sales of digital products and services.',
+            course6Title: 'Individual mentoring',
+            course6Desc: 'Individual mentoring with exclusive action plan. Ideal for those seeking direct support to apply campaigns with results.',
+            
+            courseLink: 'Learn more',
+            
+            // About section
+            aboutMission: 'Our Mission',
+            aboutMissionText: 'Transform businesses through effective digital strategies, connecting entrepreneurs to their ideal clients, regardless of geographical location.',
+            aboutVision: 'Our Vision',
+            aboutVisionText: 'To be the main reference in international paid traffic, offering personalized solutions that generate real results for entrepreneurs anywhere in the world.',
+            aboutWho: 'Who We Are',
+            aboutWhoText: 'We are an agency specialized in paid traffic with practical experience in campaigns in Brazil and abroad. Our humanized approach and focus on results differentiates us in the digital market.',
+            aboutExperience: 'Our Experience',
+            aboutExperienceText: 'With years of experience in digital campaigns, we serve both Brazilian entrepreneurs and expatriates, adapting strategies for different cultures and markets.',
+            
+            // Blog section
+            blog1Title: 'Digital sales',
+            blog1Desc: 'Strategies and tips to increase your online sales.',
+            blog2Title: 'Paid traffic tips',
+            blog2Desc: 'Practical insights to optimize your campaigns.',
+            blog3Title: 'For beginner entrepreneurs',
+            blog3Desc: 'First steps in the digital world.',
+            blog4Title: 'International traffic',
+            blog4Desc: 'Strategies for different global markets.',
+            blogCta: 'Coming soon, exclusive articles on digital strategies!',
+            
+            // Contact section
+            contactFormTitle: 'Contact Form',
+            contactFormLoading: 'Loading...',
+            contact1Title: 'WhatsApp',
+            contact1Link: 'Chat now',
+            contact2Title: 'Schedule Meeting',
+            contact2Link: 'Schedule free analysis',
+            contact3Title: 'Social Media',
+            
+            // Footer
+            footerDesc: 'International Paid Traffic Agency',
+            footerServices: 'Services',
+            footerService1: 'Paid Traffic',
+            footerService2: 'Landing Pages',
+            footerService3: 'Consulting',
+            footerService4: 'Mentoring',
+            footerCompany: 'Company',
+            footerCompany1: 'About',
+            footerCompany2: 'Blog',
+            footerCompany3: 'Contact',
+            footerContact: 'Contact',
+            footerContact1: 'WhatsApp',
+            footerContact2: 'Schedule',
+            footerCopyright: 'All rights reserved.',
+            
             // CTAs fixos
             fixedCtaText: 'Schedule a free analysis',
             fixedCtaSchedule: 'Schedule',
@@ -270,6 +400,71 @@ function changeLanguage() {
             service10Desc: 'Portugués, inglés y español con copy nativo.',
             service11Title: 'Consultoría cultural',
             service11Desc: 'Adaptación de lenguaje y cultura digital.',
+            
+            // Courses section
+            coursesSubtitle1: 'Cursos grabados',
+            coursesSubtitle2: 'Mentoría personalizada',
+            
+            course1Title: 'Curso Hotfy',
+            course1Desc: 'Cómo ganar en dólares con estrategias digitales efectivas.',
+            course2Title: 'Vender como afiliado',
+            course2Desc: 'Cómo vender como afiliado y ganar en dólares.',
+            course3Title: 'Tráfico Local Simplificado',
+            course3Desc: 'Aprende a crear campañas que generen leads para negocios físicos.',
+            course4Title: 'Fundamentos del Tráfico Pago',
+            course4Desc: 'Curso completo para principiantes en Facebook Ads, Instagram y Google Ads.',
+            course5Title: 'Estrategias para Negocios Digitales',
+            course5Desc: 'Para quien desea escalar ventas de productos digitales y servicios.',
+            course6Title: 'Mentoría individual',
+            course6Desc: 'Mentoría individual con plan de acción exclusivo. Ideal para quien busca apoyo directo para aplicar campañas con resultados.',
+            
+            courseLink: 'Saber más',
+            
+            // About section
+            aboutMission: 'Nuestra Misión',
+            aboutMissionText: 'Transformar negocios a través de estrategias digitales efectivas, conectando empresarios con sus clientes ideales, independientemente de la ubicación geográfica.',
+            aboutVision: 'Nuestra Visión',
+            aboutVisionText: 'Ser la principal referencia en tráfico pago internacional, ofreciendo soluciones personalizadas que generen resultados reales para empresarios en cualquier lugar del mundo.',
+            aboutWho: 'Quiénes Somos',
+            aboutWhoText: 'Somos una agencia especializada en tráfico pago con experiencia práctica en campañas en Brasil y en el exterior. Nuestro enfoque humanizado y enfoque en resultados nos diferencia en el mercado digital.',
+            aboutExperience: 'Nuestra Experiencia',
+            aboutExperienceText: 'Con años de experiencia en campañas digitales, atendemos tanto a empresarios brasileños como expatriados, adaptando estrategias para diferentes culturas y mercados.',
+            
+            // Blog section
+            blog1Title: 'Ventas digitales',
+            blog1Desc: 'Estrategias y consejos para aumentar tus ventas online.',
+            blog2Title: 'Consejos de tráfico pago',
+            blog2Desc: 'Insights prácticos para optimizar tus campañas.',
+            blog3Title: 'Para empresarios principiantes',
+            blog3Desc: 'Primeros pasos en el mundo digital.',
+            blog4Title: 'Tráfico internacional',
+            blog4Desc: 'Estrategias para diferentes mercados globales.',
+            blogCta: '¡Próximamente, artículos exclusivos sobre estrategias digitales!',
+            
+            // Contact section
+            contactFormTitle: 'Formulario de Contacto',
+            contactFormLoading: 'Cargando...',
+            contact1Title: 'WhatsApp',
+            contact1Link: 'Hablar ahora',
+            contact2Title: 'Agendar Reunión',
+            contact2Link: 'Agendar análisis gratuito',
+            contact3Title: 'Redes Sociales',
+            
+            // Footer
+            footerDesc: 'Agencia de Tráfico Pago Internacional',
+            footerServices: 'Servicios',
+            footerService1: 'Tráfico Pago',
+            footerService2: 'Landing Pages',
+            footerService3: 'Consultoría',
+            footerService4: 'Mentoría',
+            footerCompany: 'Empresa',
+            footerCompany1: 'Acerca',
+            footerCompany2: 'Blog',
+            footerCompany3: 'Contacto',
+            footerContact: 'Contacto',
+            footerContact1: 'WhatsApp',
+            footerContact2: 'Agendar',
+            footerCopyright: 'Todos los derechos reservados.',
             
             // CTAs fixos
             fixedCtaText: 'Agenda un análisis gratuito',
@@ -340,6 +535,21 @@ function changeLanguage() {
     
     // Services section content
     translateServicesSection(t);
+    
+    // Courses section content
+    translateCoursesSection(t);
+    
+    // About section content
+    translateAboutSection(t);
+    
+    // Blog section content
+    translateBlogSection(t);
+    
+    // Contact section content
+    translateContactSection(t);
+    
+    // Footer content
+    translateFooterSection(t);
     
     // CTAs fixos
     const fixedCtaText = document.querySelector('.fixed-cta-text');
@@ -416,6 +626,197 @@ function translateServicesSection(t) {
             }
         }
     });
+}
+
+// Função para traduzir a seção de cursos
+function translateCoursesSection(t) {
+    // Subtítulos das categorias de cursos
+    const courseCategories = document.querySelectorAll('.course-category h3');
+    if (courseCategories.length >= 2) {
+        if (t.coursesSubtitle1) courseCategories[0].textContent = t.coursesSubtitle1;
+        if (t.coursesSubtitle2) courseCategories[1].textContent = t.coursesSubtitle2;
+    }
+    
+    // Traduzir items de cursos individuais
+    const courseItems = document.querySelectorAll('.course-item');
+    const courseTranslations = [
+        { title: t.course1Title, desc: t.course1Desc },
+        { title: t.course2Title, desc: t.course2Desc },
+        { title: t.course3Title, desc: t.course3Desc },
+        { title: t.course4Title, desc: t.course4Desc },
+        { title: t.course5Title, desc: t.course5Desc }
+    ];
+    
+    courseItems.forEach((item, index) => {
+        if (courseTranslations[index]) {
+            const titleElement = item.querySelector('h4');
+            const descElement = item.querySelector('p');
+            const linkElement = item.querySelector('.course-link');
+            
+            if (titleElement && courseTranslations[index].title) {
+                titleElement.textContent = courseTranslations[index].title;
+            }
+            if (descElement && courseTranslations[index].desc) {
+                descElement.textContent = courseTranslations[index].desc;
+            }
+            if (linkElement && t.courseLink) {
+                linkElement.textContent = t.courseLink;
+            }
+        }
+    });
+    
+    // Traduzir mentoria individual
+    const mentorshipItem = document.querySelector('.mentorship-item');
+    if (mentorshipItem) {
+        const titleElement = mentorshipItem.querySelector('h4');
+        const descElement = mentorshipItem.querySelector('p');
+        
+        if (titleElement && t.course6Title) {
+            titleElement.textContent = t.course6Title;
+        }
+        if (descElement && t.course6Desc) {
+            descElement.textContent = t.course6Desc;
+        }
+    }
+}
+
+// Função para traduzir a seção sobre
+function translateAboutSection(t) {
+    const aboutTexts = document.querySelectorAll('.about-text h3, .about-text p');
+    
+    // Mapear os elementos H3 e P da seção sobre
+    const aboutElements = document.querySelectorAll('.about-text h3');
+    if (aboutElements.length >= 4) {
+        if (t.aboutMission) aboutElements[0].textContent = t.aboutMission;
+        if (t.aboutVision) aboutElements[1].textContent = t.aboutVision;
+        if (t.aboutWho) aboutElements[2].textContent = t.aboutWho;
+        if (t.aboutExperience) aboutElements[3].textContent = t.aboutExperience;
+    }
+    
+    const aboutParagraphs = document.querySelectorAll('.about-text p');
+    if (aboutParagraphs.length >= 4) {
+        if (t.aboutMissionText) aboutParagraphs[0].textContent = t.aboutMissionText;
+        if (t.aboutVisionText) aboutParagraphs[1].textContent = t.aboutVisionText;
+        if (t.aboutWhoText) aboutParagraphs[2].textContent = t.aboutWhoText;
+        if (t.aboutExperienceText) aboutParagraphs[3].textContent = t.aboutExperienceText;
+    }
+}
+
+// Função para traduzir a seção do blog
+function translateBlogSection(t) {
+    const blogCategories = document.querySelectorAll('.category-item');
+    const blogTranslations = [
+        { title: t.blog1Title, desc: t.blog1Desc },
+        { title: t.blog2Title, desc: t.blog2Desc },
+        { title: t.blog3Title, desc: t.blog3Desc },
+        { title: t.blog4Title, desc: t.blog4Desc }
+    ];
+    
+    blogCategories.forEach((item, index) => {
+        if (blogTranslations[index]) {
+            const titleElement = item.querySelector('h3');
+            const descElement = item.querySelector('p');
+            
+            if (titleElement && blogTranslations[index].title) {
+                titleElement.textContent = blogTranslations[index].title;
+            }
+            if (descElement && blogTranslations[index].desc) {
+                descElement.textContent = blogTranslations[index].desc;
+            }
+        }
+    });
+    
+    // CTA do blog
+    const blogCta = document.querySelector('.blog-cta p');
+    if (blogCta && t.blogCta) {
+        blogCta.textContent = t.blogCta;
+    }
+}
+
+// Função para traduzir a seção de contato
+function translateContactSection(t) {
+    // Título do formulário
+    const contactFormTitle = document.querySelector('.contact-form h3');
+    if (contactFormTitle && t.contactFormTitle) {
+        contactFormTitle.textContent = t.contactFormTitle;
+    }
+    
+    // Loading do iframe
+    const iframeText = document.querySelector('.contact-form iframe');
+    if (iframeText && t.contactFormLoading) {
+        // Note: iframe content can't be directly modified, but we can update the fallback text
+        iframeText.textContent = t.contactFormLoading;
+    }
+    
+    // Items de contato
+    const contactItems = document.querySelectorAll('.contact-item');
+    const contactTranslations = [
+        { title: t.contact1Title, link: t.contact1Link },
+        { title: t.contact2Title, link: t.contact2Link },
+        { title: t.contact3Title, link: null }
+    ];
+    
+    contactItems.forEach((item, index) => {
+        if (contactTranslations[index]) {
+            const titleElement = item.querySelector('h4');
+            const linkElement = item.querySelector('a');
+            
+            if (titleElement && contactTranslations[index].title) {
+                titleElement.textContent = contactTranslations[index].title;
+            }
+            if (linkElement && contactTranslations[index].link) {
+                linkElement.textContent = contactTranslations[index].link;
+            }
+        }
+    });
+}
+
+// Função para traduzir o footer
+function translateFooterSection(t) {
+    // Descrição da empresa
+    const footerDesc = document.querySelector('.footer-logo p');
+    if (footerDesc && t.footerDesc) {
+        footerDesc.textContent = t.footerDesc;
+    }
+    
+    // Colunas do footer
+    const footerColumns = document.querySelectorAll('.footer-column h4');
+    if (footerColumns.length >= 3) {
+        if (t.footerServices) footerColumns[0].textContent = t.footerServices;
+        if (t.footerCompany) footerColumns[1].textContent = t.footerCompany;
+        if (t.footerContact) footerColumns[2].textContent = t.footerContact;
+    }
+    
+    // Links dos serviços
+    const serviceLinks = document.querySelectorAll('.footer-column:nth-child(1) ul li a');
+    if (serviceLinks.length >= 4) {
+        if (t.footerService1) serviceLinks[0].textContent = t.footerService1;
+        if (t.footerService2) serviceLinks[1].textContent = t.footerService2;
+        if (t.footerService3) serviceLinks[2].textContent = t.footerService3;
+        if (t.footerService4) serviceLinks[3].textContent = t.footerService4;
+    }
+    
+    // Links da empresa
+    const companyLinks = document.querySelectorAll('.footer-column:nth-child(2) ul li a');
+    if (companyLinks.length >= 3) {
+        if (t.footerCompany1) companyLinks[0].textContent = t.footerCompany1;
+        if (t.footerCompany2) companyLinks[1].textContent = t.footerCompany2;
+        if (t.footerCompany3) companyLinks[2].textContent = t.footerCompany3;
+    }
+    
+    // Links de contato
+    const contactLinks = document.querySelectorAll('.footer-column:nth-child(3) ul li a');
+    if (contactLinks.length >= 2) {
+        if (t.footerContact1) contactLinks[0].textContent = t.footerContact1;
+        if (t.footerContact2) contactLinks[1].textContent = t.footerContact2;
+    }
+    
+    // Copyright
+    const copyright = document.querySelector('.footer-bottom p');
+    if (copyright && t.footerCopyright) {
+        const year = new Date().getFullYear();
+        copyright.innerHTML = `&copy; ${year} Alvllack. ${t.footerCopyright}`;
+    }
 }
 
 // Header sticky com mudança de cor
